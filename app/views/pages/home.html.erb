@@ -1,0 +1,28 @@
+<html>
+<head>
+<style>
+div {
+    background-color: lightgrey;
+    width: 310px;
+    padding: 25px;
+    border: 10px solid navy;
+    margin: 25px;
+}
+</style>
+</head>
+<body>
+<div >
+<h1>Sveiki</h1>
+<h2>Įveskit tekstą</h2>
+
+<%= form_tag do %>
+	<%= text_area_tag 'tekstas', 'Įveskite tekstą', rows: 10, cols: 40 %>
+		 <br>
+		 <%= submit_tag 'Edit this article' %>
+
+<br>		 
+<%= rodo %>
+<% end %>
+</div>
+</body>
+</html>
